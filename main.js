@@ -100,15 +100,16 @@
 //   }
 //   console.log(filtrerTexte("Bonjour", estVoyelle));
 
-
-// a faire
 //   function appliquerTroisFois(valeur, fonction) {
-//         return fonction(valeur)
+//         for (let i = 0; i < 3; i++) {
+//         valeur++
+//         valeur= fonction(valeur)
+//     }
+//     return valeur
 //   }
 //   function incrementer(x) {
-//     for (let i = 0; i < 4; i++) {
-//         return x++;
-//     }
+
+//     return x++
 //   }
   
 //   console.log(appliquerTroisFois(5, incrementer));
@@ -133,10 +134,95 @@
 //     if (x >= 0 && y >= 0 && x % 2 === 0 && y % 2 === 0){
 //         return x + y;
 //     }else {
-//         return x + y;
-//     }
+//         return x * y;
+//     }   
 //   }
   
 //   console.log(conditionnelle(4, 2, estPairEtPositif));
 //   console.log(conditionnelle(3, 2, estPairEtPositif))
 
+// function estPositif(nombre) {
+//     if (nombre > 0) {
+//         return "Positif";
+//     }else if (nombre < 0) {
+//         return "Négatif";
+//     }else {
+//         return "Zéro";
+//     }
+//   }
+//   console.log(estPositif(5));
+//   console.log(estPositif(-3));
+//   console.log(estPositif(0));
+
+// function comparerNombres(a, b) {
+//     if (a < b) {
+//         return "Plus petit";
+//     }else if (a > b) {
+//         return "Plus grand";
+//     }else {
+//         return "Égal";
+//     }
+//   }
+//   console.log(comparerNombres(5, 10));
+//   console.log(comparerNombres(10, 5));
+//   console.log(comparerNombres(7, 7));
+
+// function calculerPrix(prix) {
+//     if (prix > 100) {
+//         let formule = 10 * prix / 100;
+//         let result = prix -  formule;
+//         return result;
+        
+//     }else if (prix < 100 && prix > 0) {
+//         return prix;
+//     }
+//   }
+//   console.log(calculerPrix(120));
+//   console.log(calculerPrix(80));
+
+// function tarif(age) {
+//     if (age < 5) {
+//         return "Gratuit";
+//     }else if (age >= 5 && age <= 18) {
+//         return "Réduit";
+//     }else {
+//         return "Plein tarif";
+//     }
+//   }
+//   console.log(tarif(3));
+//   console.log(tarif(15));
+//   console.log(tarif(25));
+
+// function longueurChaine(chaine) {
+//     if(chaine.split("").length <= 10) {
+//         return "Courte";
+//     }else {
+//         return "Longue";
+//     }
+//   }
+//   console.log(longueurChaine("JavaScript"));
+//   console.log(longueurChaine("Développement web"));
+
+// function categorieTemperature(temp) {
+//     if (temp > 30) {
+//         return "Chaud";
+//     }else if (temp <=30 && temp > 15) {
+//         return "Tempéré";
+//     }else {
+//         return "Froid";
+//     }
+//   }
+//   console.log(categorieTemperature(35));
+//   console.log(categorieTemperature(20));
+//   console.log(categorieTemperature(10));
+
+
+// function multipleDeCinq(nombre) {
+//     if (nombre % 5 === 0) {
+//         return "Oui";
+//     }else {
+//         return "Non";
+//     }
+//   }
+//   console.log(multipleDeCinq(10)); // Résultat attendu : "Oui"
+//   console.log(multipleDeCinq(7));
